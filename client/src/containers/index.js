@@ -1,6 +1,6 @@
 import Home from "./Home/Home";
-import Cart from "./Cart/Cart";
+import Products from "./Ecom/Products";
 
 import NotFoundPage from "./NotFoundPage/404";
 
-export { Home, Cart, NotFoundPage };
+export { Home, Products, NotFoundPage };

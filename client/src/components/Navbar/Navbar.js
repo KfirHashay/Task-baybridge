@@ -57,7 +57,7 @@ function Navbar(props) {
                 </Link>
               </li>
               <li>
-                <Link to={"/cart"} className="">
+                <Link to={"/products"} className="">
                   Cart
                 </Link>
               </li>
