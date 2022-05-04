@@ -1,0 +1,47 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+@import "../../public/assets/sass/libs/_vars.scss";
+@import "../../public/assets/sass/libs/_functions.scss";
+@import "../../public/assets/sass/libs/_breakpoints.scss";
+
+// Breakpoints.
+
+@include breakpoints(
+  (
+    wider: (
+      1681px,
+      2570px,
+    ),
+    wide: (
+      1281px,
+      1680px,
+    ),
+    normal: (
+      981px,
+      1280px,
+    ),
+    narrow: (
+      841px,
+      980px,
+    ),
+    narrower: (
+      737px,
+      840px,
+    ),
+    mobile: (
+      null,
+      736px,
+    ),
+  )
+);
+
+// Base //
+
+@import "../../public/assets/sass/base/_base.scss";
+//@import "../../public/assets/sass/base/_reset.scss";
+
+// Components //
+@import "../../public/assets/sass/components/_navbar.scss";
+@import "../../public/assets/sass/components/_footer.scss";
+@import "../../public/assets/sass/components/_404.scss";

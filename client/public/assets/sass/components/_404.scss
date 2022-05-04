@@ -1,0 +1,215 @@
+#error {
+  font-family: "Poppins", sans-serif;
+  max-width: 95%;
+  top: 50px;
+  padding: 10px;
+  margin: auto;
+  position: relative;
+
+  .error .clip .shadow-class {
+    height: 180px; /*Contrall*/
+  }
+  .error .clip:nth-of-type(2) .shadow-class {
+    width: 120px; /*Contrall play with javascript*/
+  }
+  .error .clip:nth-of-type(1) .shadow-class,
+  .error .clip:nth-of-type(3) .shadow-class {
+    width: 250px; /*Contrall*/
+  }
+  .error .digit {
+    width: 150px; /*Contrall*/
+    height: 150px; /*Contrall*/
+    line-height: 150px; /*Contrall*/
+    font-size: 120px;
+    font-weight: bold;
+
+    position: relative;
+    top: 8%;
+
+    border-radius: 50%;
+    display: inline-block;
+    transform: skew(45deg);
+
+    color: _palette(bg);
+    background: _palette(light-blue);
+  }
+  .error h2   /*Contrall*/ {
+    font-size: 38px;
+    color: #a2a2a2;
+    font-weight: bold;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+  }
+  .error h3   /*Contrall*/ {
+    font-size: 28px;
+    color: #a2a2a2;
+    // font-weight: bold;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+  }
+
+  .error .container-error-404 {
+    margin: auto;
+    //position: relative;
+    height: 225px;
+    padding: 10px;
+    // width: 100%;
+    text-align: center;
+  }
+  .error .container-error-404 .clip {
+    display: inline-block;
+    transform: skew(-45deg);
+  }
+  .error .clip .shadow-class {
+    overflow: hidden;
+  }
+  .error .clip:nth-of-type(2) .shadow-class {
+    overflow: hidden;
+    position: relative;
+    box-shadow: inset 20px 0px 20px -15px _palette(light-grey),
+      20px 0px 20px -15px _palette(light-grey);
+  }
+
+  .error .clip:nth-of-type(3) .shadow-class:after,
+  .error .clip:nth-of-type(1) .shadow-class:after {
+    content: "";
+    position: absolute;
+    right: -8px;
+    bottom: 0px;
+    z-index: 9999;
+    height: 100%;
+    width: 10px;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      _palette(light-grey),
+      transparent
+    );
+    border-radius: 50%;
+  }
+  .error .clip:nth-of-type(3) .shadow-class:after {
+    left: -8px;
+  }
+
+  .error .clip:nth-of-type(2) .digit {
+    left: -10%;
+  }
+  .error .clip:nth-of-type(1) .digit {
+    right: -20%;
+  }
+  .error .clip:nth-of-type(3) .digit {
+    left: -20%;
+  }
+
+  .error .triangle {
+    position: absolute;
+    z-index: 999;
+    transform: rotate(45deg);
+    content: "";
+    width: 0;
+    height: 0;
+  }
+
+  @media (max-width: 811px) {
+    .error .clip .shadow-class {
+      height: 100px; /*Contrall*/
+    }
+    .error .clip:nth-of-type(2) .shadow-class {
+      width: 70px; /*Contrall play with javascript*/
+    }
+    .error .clip:nth-of-type(1) .shadow-class,
+    .error .clip:nth-of-type(3) .shadow-class {
+      width: 100px; /*Contrall*/
+    }
+    .error .digit {
+      width: 80px; /*Contrall*/
+      height: 80px; /*Contrall*/
+      line-height: 80px; /*Contrall*/
+      font-size: 52px;
+    }
+    .error h2   /*Contrall*/ {
+      font-size: 24px;
+    }
+
+    .error span.triangle    /*Contrall*/ {
+      top: 70%;
+      right: -3%;
+      border-left: 10px solid _palette(fg);
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+    }
+    .error .container-error-404 {
+      height: 150px;
+    }
+  }
+
+  @media (max-width: 391px) {
+    .error .clip .shadow-class {
+      height: 100px; /*Contrall*/
+    }
+    .error .clip:nth-of-type(2) .shadow-class {
+      width: 70px; /*Contrall play with javascript*/
+    }
+    .error .clip:nth-of-type(1) .shadow-class,
+    .error .clip:nth-of-type(3) .shadow-class {
+      width: 80px; /*Contrall*/
+    }
+    .error .digit {
+      width: 80px; /*Contrall*/
+      height: 80px; /*Contrall*/
+      line-height: 80px; /*Contrall*/
+      font-size: 52px;
+    }
+    .error h2   /*Contrall*/ {
+      font-size: 24px;
+    }
+
+    .error span.triangle    /*Contrall*/ {
+      top: 70%;
+      right: -3%;
+      border-left: 10px solid _palette(fg);
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+    }
+    .error .container-error-404 {
+      height: 150px;
+    }
+  }
+
+  @media (max-width: 342px) {
+    .error .clip .shadow-class {
+      height: 100px; /*Contrall*/
+    }
+    .error .clip:nth-of-type(2) .shadow-class {
+      width: 60px; /*Contrall play with javascript*/
+    }
+    .error .clip:nth-of-type(1) .shadow-class,
+    .error .clip:nth-of-type(3) .shadow-class {
+      width: 75px; /*Contrall*/
+    }
+    .error .digit {
+      width: 80px; /*Contrall*/
+      height: 80px; /*Contrall*/
+      line-height: 80px; /*Contrall*/
+      font-size: 52px;
+    }
+    .error h2   /*Contrall*/ {
+      font-size: 24px;
+    }
+
+    .error span.triangle    /*Contrall*/ {
+      top: 70%;
+      right: -3%;
+      border-left: 10px solid _palette(fg);
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+    }
+    .error .container-error-404 {
+      height: 150px;
+    }
+  }
+}
