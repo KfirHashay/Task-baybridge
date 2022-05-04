@@ -4,7 +4,7 @@ Shooping Cart Task
 
 Using react, Redux and styled components/sass
 was built from 0 up.
-
+everything in the dev branch.
 
 Npm install
 Npm start
