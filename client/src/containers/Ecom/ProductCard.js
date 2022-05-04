@@ -1,8 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { useDispatch } from "react-redux";
+import Button from "../../components/Ecom/elements/Button";
+import { addToCart } from "../../state/actions/cart";
 
 const ProductCard = ({ id, title, price, image, category }) => {
+  const product = { id, title, price, image, category };
+  const dispatch = useDispatch();
+
   return (
     <ProductCardWrapper>
       <ImageContainer>
@@ -13,6 +19,13 @@ const ProductCard = ({ id, title, price, image, category }) => {
           <Title>{title}</Title>
           <div>${price.toFixed(2)}</div>
         </Info>
+        <Button
+          onClick={() => dispatch(addToCart(product))}
+          content="Add to cart"
+          size="wide"
+          color="dark"
+          animation="color"
+        />
       </Details>
     </ProductCardWrapper>
   );

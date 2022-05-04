@@ -4,11 +4,6 @@ import { Route, Routes } from "react-router-dom";
 
 import { Home, Products, NotFoundPage } from "./containers";
 
-// import {
-//   Main
-
-// } from "./containers/Admin/components";
-
 const Routing = () => {
   return (
     <Routes>

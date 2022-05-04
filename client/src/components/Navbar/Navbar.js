@@ -1,6 +1,14 @@
 import React, { useEffect } from "react";
 
+import styled from "styled-components";
+
 import { Link } from "react-router-dom";
+
+import { FaShoppingCart } from "react-icons/fa";
+import { useDispatch, useSelector } from "react-redux";
+
+import Button from "../Ecom/elements/Button";
+import { openCart } from "../../state/actions";
 
 function Nav() {
   const toggle = () => {
@@ -29,6 +37,12 @@ function Nav() {
 }
 
 function Navbar(props) {
+  const cart = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
+
+  const sumQuantity = () => {
+    return cart.reduce((quantity, cartItem) => quantity + cartItem.quantity, 0);
+  };
   return (
     <div>
       <nav>
@@ -64,12 +78,44 @@ function Navbar(props) {
             </ul>
           </div>
           <ul id="navbar-nav" className="navbar-nav">
-            {props.children}
+            <ButtonContainer onClick={() => dispatch(openCart())}>
+              <Button content={<FaShoppingCart />} shape="round" />
+              {sumQuantity() > 0 ? <Quantity>{sumQuantity()}</Quantity> : ""}
+            </ButtonContainer>
           </ul>
         </div>
       </nav>
     </div>
   );
 }
+
+const ButtonContainer = styled.div`
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.15s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(1.02);
+  }
+`;
+
+const Quantity = styled.div`
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50px;
+  background-color: ${({ theme }) => theme.colors.red};
+  font-size: 2rem;
+  font-weight: bold;
+`;
 
 export default Nav;

@@ -59,28 +59,5 @@ $palette: (
     text-color-nav: #494949,
     icon-fill: #935bd3,
     border-nav: 0.1px solid #dedede,
-  ),
-  blog: (
-    light-color: #3d3d3d,
-    light-color-alt: rgba(0, 0, 0, 0.6),
-    primary-background-color: #fff,
-    secondary-background-color: #f1f1f1,
-    hover-light-color: #fff,
-    gradient-color:
-      linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b),
-    transparent-light-color: rgba(0, 0, 0, 0.1),
-    transparent-dark-color: #f1f1f1,
-  ),
-  blog-dark: (
-    light-color: #fff,
-    light-color-alt: #afb6cd,
-    primary-background-color: #131417,
-    secondary-background-color: #252830,
-    hover-light-color: #fff,
-    hover-dark-color: #131417,
-    gradient-color:
-      linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b),
-    transparent-light-color: rgba(255, 255, 255, 0.05),
-    transparent-dark-color: rgba(0, 0, 0, 0.75),
   )
 );
